@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App-Project {
+    margin-top: 50px;
+    margin-inline: 40% !important;
+}
+
+.cirecle {
+    width: 29px;
+    height: 29px;
+    line-height: 25px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.stepsWrapp {
+    display: flex;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stepeBlock .circleWrapper {
+    padding: 0px 20px;
+    position: relative;
+}
+
+.selected .cirecle {
+    color: black;
+    background-color: white;
+    border: 1px solid green;
+}
+
+.stepeBlock:not(:last-child)>.circleWrapper::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: green;
+    margin: auto;
+    z-index: -1;
+}
+
+.stepeBlock:not(:last-child)>.circleWrapper::after {
+    height: 2px;
+}
+
+.stepeBlock:not(:last-child).selected>.circleWrapper::after {
+    height: 3px;
+}
+
+.pages {
+    margin: 0 40%;
+}
