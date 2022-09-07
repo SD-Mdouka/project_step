@@ -1,0 +1,14 @@
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: rgb(99, 51, 230);
+    gap: 8;
+    grid-gap: 30px 10px;
+    -ms-grid-row: 30px;
+}
+
+.header {}
