@@ -1,4 +1,5 @@
 import React from "react";
+import App from "./Steps";
 import "./style-grid.css";
 
 const Grid = () => {
@@ -10,7 +11,10 @@ const Grid = () => {
         <div className="box">box-2</div>
         <div className="box">box-3</div>
         <div className="sidebar">sidbar</div>
-        <div className="content">content</div>
+        <div className="content">
+          {" "}
+          <App />{" "}
+        </div>
         <div className="footer">footer</div>
       </div>
     </div>
